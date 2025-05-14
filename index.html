@@ -1,313 +1,586 @@
-<!doctype html>
-<html lang="en" class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default"
-    data-assets-path="admin/assets/" data-template="vertical-menu-template-free" data-style="light">
+    <!doctype html>
+    <html lang="en" class="light-style layout-menu-fixed layout-compact" dir="ltr"
+        data-theme="theme-default"
+        data-assets-path="admin/assets/" data-template="vertical-menu-template-free"
+        data-style="light">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport"
+                content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>NoahTech</title>
+            <title>NoahTech</title>
 
-    <meta name="description" content />
+            <meta name="description" content />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href />
+            <!-- Favicon -->
+            <link rel="icon" type="image/x-icon" href />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="assets/vendor/fonts/remixicon/remixicon.css" />
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="assets/css/auth.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
-</head>
+            <!-- Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
+                rel="stylesheet" />
+            <link rel="stylesheet"
+                href="assets/vendor/fonts/remixicon/remixicon.css" />
+            <!-- Core CSS -->
+            <link rel="stylesheet" href="assets/vendor/css/core.css"
+                class="template-customizer-core-css" />
+            <link rel="stylesheet" href="assets/css/auth.css" />
+            <link rel="stylesheet" href="assets/css/custom.css" />
+        </head>
 
-<body>
-    <!-- Layout wrapper -->
-    <div class="layout-wrapper layout-content-navbar">
-        <div class="layout-container">
+        <body>
+            <!-- Layout wrapper -->
+            <div class="layout-wrapper layout-content-navbar">
+                <div class="layout-container">
 
-            <!-- Sidebar -->
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme sidebar">
-                <div class="app-brand demo my-5">
-                    <a href="/" class="app-brand-link">
-                        <span class="app-brand-text demo menu-text fw-semibold ms-2">
-                            <img class="img-fluid" style="width: 150px" height="50px" src="assets/img/sidebar-logo.png"
-                                alt="not-show"></span>
-                    </a>
-
-                </div>
-
-                <!-- <div class="menu-inner-shadow"></div> -->
-
-                <ul class="menu-inner py-1 mt-5">
-
-                    <!-- Layouts -->
-                    <li class="menu-item active">
-                        <a href="/" class="menu-link ">
-
-                            <i class="menu-icon ri-home-8-line"></i>
-                            <div data-i18n="Support">Dashboard</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link menu-toggle" style="--menu-toggle-after: none;">
-                            <i class="menu-icon ri-file-3-line"></i>
-                            <!-- <i class="ri-file-3-line"></i> -->
-                            <div data-i18n="Layouts">Projects</div>
-                            <span class="menu-toggle-icon ri-add-line"></span>
-                        </a>
-
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="applicant.html" class="menu-link">
-                                    <div>Project List</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="summary.html" class="menu-link">
-                                    <div>Project List</div>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link menu-toggle" style="--menu-toggle-after: none;">
-                            <i class="menu-icon ri-list-check"></i>
-
-                            <div data-i18n="Layouts">Department</div>
-                            <span class="menu-toggle-icon ri-add-line"></span>
-                        </a>
-
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="applicant.html" class="menu-link">
-                                    <div>Department List</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="summary.html" class="menu-link">
-                                    <div>Department List</div>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                    <li class="menu-item">
-                        <a href="#" class="menu-link ">
-                            <i class="menu-icon ri-group-line"></i>
-                            <div data-i18n="Support">Team</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link ">
-                            <i class="menu-icon ri-settings-3-line"></i>
-                            <div data-i18n="Support">Setting</div>
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-
-            <!-- Main layout -->
-            <div class="layout-page">
-
-                <!-- Navbar -->
-                <nav class="navbar  container-fluid navbar-example navbar-expand-lg p-0 py-5 py-lg-0  ">
-                    <div class="container-fluid">
-                        <div class="layout-menu-toggle navbar-nav align-items-xl-center me-4 me-xl-0 d-xl-none">
-                            <a class="nav-item nav-link px-0 me-xl-6" href="#">
-
-                                <i class="ri-dashboard-line"></i>
+                    <!-- Sidebar -->
+                    <aside id="layout-menu"
+                        class="layout-menu menu-vertical menu bg-menu-theme sidebar">
+                        <div class="app-brand demo my-5">
+                            <a href="/" class="app-brand-link">
+                                <span
+                                    class="app-brand-text demo menu-text fw-semibold ms-2">
+                                    <img class="img-fluid" style="width: 150px"
+                                        height="50px"
+                                        src="assets/img/sidebar-logo.png"
+                                        alt="not-show"></span>
                             </a>
-                        </div>
-                        <a href="/" class="app-brand-link d-lg-none d-block">
-                            <span class="app-brand-text demo menu-text fw-semibold ms-2">
-                                <img class="img-fluid" style="width: 150px" height="50px" src="assets/img/noahtech.webp"
-                                    alt="not-show"></span>
-                        </a>
 
-                        <div class="collapse navbar-collapse header-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item  ">
-                                    <a class="nav-link " href="#"><i class="ri-list-unordered me-2"></i>List</a>
-                                </li>
-                                <li class="nav-item  ">
-                                    <a class="nav-link active" href="#"><i
-                                            class="ri-layout-masonry-line me-2"></i>Board</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="#"><i class="ri-calendar-2-line me-2"></i>Calendar</a>
-                                </li>
-
-                            </ul>
                         </div>
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbar-ex-4">
-                            <span class="navbar-toggler-icon"></span>
+                        <!-- <div class="menu-inner-shadow"></div> -->
 
-                        </button>
+                        <ul class="menu-inner py-1 mt-5">
 
-                        <div class="collapse navbar-collapse" id="navbar-ex-4">
+                            <!-- Layouts -->
+                            <li class="menu-item active">
+                                <a href="/" class="menu-link ">
 
-                            <div class="navbar-nav ms-auto d-lg-flex align-items-lg-center">
+                                    <i class="menu-icon ri-home-8-line"></i>
+                                    <div data-i18n="Support">Dashboard</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link menu-toggle"
+                                    style="--menu-toggle-after: none;">
+                                    <i class="menu-icon ri-file-3-line"></i>
+                                    <!-- <i class="ri-file-3-line"></i> -->
+                                    <div data-i18n="Layouts">Projects</div>
+                                    <span
+                                        class="menu-toggle-icon ri-add-line"></span>
+                                </a>
 
-                                <div class="d-flex align-items-center">
-                                    <li class="nav-item lh-1 me-4 navbar-search mt-lg-0 mt-3 ">
-                                        <div class="nav-item d-flex align-items-center py-1 rounded-3 ps-3">
-                                            <i class="ri-search-line ri-22px me-2"></i>
-                                            <input type="text" class="form-control border-0 shadow-none"
-                                                placeholder="Search..." aria-label="Search..." />
-                                        </div>
-                                    </li>
-
-                                </div>
-
-                                <div class="d-flex  align-items-lg-center mt-4 mt-lg-0">
-
-                                    <li class="nav-item navbar-dropdown dropdown-user dropdown  user-dropdown">
-                                        <a class="nav-link btn btn-outline-secondary dropdown-toggle waves-effect  lang-dropdown"
-                                            data-bs-toggle="dropdown" href="#">
-
-                                            ENGLISH
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-menu-end mt-3 py-2">
-
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="ri-global-line"></i>
-                                                    <span class="align-middle">HINDI</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="ri-global-line me-2"></i>
-                                                    <span class="align-middle">ENGLISH</span>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href>
-                                            <img src="assets/img/bell-svgrepo-com (1).svg" alt
-                                                class="w-px-40  rounded-circle me-2">
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="applicant.html" class="menu-link">
+                                            <div>Project List</div>
                                         </a>
                                     </li>
-                                    <div class="d-flex align-items-lg-centermt-lg-0">
-                                        <li class="nav-item navbar-dropdown dropdown-user dropdown  user-dropdown">
-                                            <a class="nav-link btn btn-outline-secondary  waves-effect"
-                                                data-bs-toggle="dropdown" href="#" aria-expanded="false">
-                                                <img src="assets//img/user-image.png" alt
-                                                    class="w-px-40 h-auto rounded-circle me-2">
-
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-menu-end mt-3 py-2">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="flex-shrink-0 me-2">
-                                                                <div class="avatar avatar-online">
-                                                                    <img src="assets/img/user-image.png" alt
-                                                                        class="w-px-40 h-auto rounded-circle">
-                                                                </div>
-                                                            </div>
-                                                            <div class="flex-grow-1">
-                                                                <h6 class="mb-0 small">John
-                                                                    Doe</h6>
-                                                                <small class="text-muted">Admin</small>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <div class="dropdown-divider"></div>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="ri-user-3-line ri-22px me-2"></i>
-                                                        <span class="align-middle">My
-                                                            Profile</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="ri-settings-4-line ri-22px me-2"></i>
-                                                        <span class="align-middle">Settings</span>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </li>
-
-                                    </div>
-
-                                    <li class="nav-item lh-1 me-4 ">
-                                        <button type="button" class="btn rounded-pill btn-icon waves-effect">
-
-                                            <span class="ri-logout-circle-r-line ri-22px "></span>
-                                        </button>
+                                    <li class="menu-item">
+                                        <a href="summary.html" class="menu-link">
+                                            <div>Project List</div>
+                                        </a>
                                     </li>
-                                </div>
 
-                                <div class="header-menu d-lg-none d-block">
-                                    <ul class="navbar-nav mr-auto d-inline-block">
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link menu-toggle"
+                                    style="--menu-toggle-after: none;">
+                                    <i class="menu-icon ri-list-check"></i>
+
+                                    <div data-i18n="Layouts">Department</div>
+                                    <span
+                                        class="menu-toggle-icon ri-add-line"></span>
+                                </a>
+
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="applicant.html" class="menu-link">
+                                            <div>Department List</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="summary.html" class="menu-link">
+                                            <div>Department List</div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="#" class="menu-link ">
+                                    <i class="menu-icon ri-group-line"></i>
+                                    <div data-i18n="Support">Team</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link ">
+                                    <i class="menu-icon ri-settings-3-line"></i>
+                                    <div data-i18n="Support">Setting</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- Main layout -->
+                    <div class="layout-page">
+
+                        <!-- Navbar -->
+                        <nav
+                            class="navbar  container-fluid navbar-example navbar-expand-lg p-0 py-5 py-lg-0  ">
+                            <div class="container-fluid">
+                                <div
+                                    class="layout-menu-toggle navbar-nav align-items-xl-center me-4 me-xl-0 d-xl-none">
+                                    <a class="nav-item nav-link px-0 me-xl-6"
+                                        href="#">
+
+                                        <i class="ri-dashboard-line"></i>
+                                    </a>
+                                </div>
+                                <a href="/"
+                                    class="app-brand-link d-lg-none d-block">
+                                    <span
+                                        class="app-brand-text demo menu-text fw-semibold ms-2">
+                                        <img class="img-fluid" style="width: 150px"
+                                            height="50px"
+                                            src="assets/img/noahtech.webp"
+                                            alt="not-show"></span>
+                                </a>
+
+                                <div class="collapse navbar-collapse header-menu"
+                                    id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
                                         <li class="nav-item  ">
-                                            <a class="nav-link " href="#"><i class="ri-list-unordered me-2"></i>List</a>
+                                            <a class="nav-link " href="#"><i
+                                                    class="ri-list-unordered me-2"></i>List</a>
                                         </li>
                                         <li class="nav-item  ">
                                             <a class="nav-link active" href="#"><i
                                                     class="ri-layout-masonry-line me-2"></i>Board</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#"><i
+                                            <a class="nav-link " href="#"><i
                                                     class="ri-calendar-2-line me-2"></i>Calendar</a>
                                         </li>
 
                                     </ul>
                                 </div>
+
+                                <button class="navbar-toggler" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbar-ex-4">
+                                    <span class="navbar-toggler-icon"></span>
+
+                                </button>
+
+                                <div class="collapse navbar-collapse"
+                                    id="navbar-ex-4">
+
+                                    <div
+                                        class="navbar-nav ms-auto d-lg-flex align-items-lg-center">
+
+                                        <div class="d-flex align-items-center">
+                                            <li
+                                                class="nav-item lh-1 me-4 navbar-search mt-lg-0 mt-3 ">
+                                                <div
+                                                    class="nav-item d-flex align-items-center py-1 rounded-3 ps-3">
+                                                    <i
+                                                        class="ri-search-line ri-22px me-2"></i>
+                                                    <input type="text"
+                                                        class="form-control border-0 shadow-none"
+                                                        placeholder="Search..."
+                                                        aria-label="Search..." />
+                                                </div>
+                                            </li>
+
+                                        </div>
+
+                                        <div
+                                            class="d-flex  align-items-lg-center mt-4 mt-lg-0">
+
+                                            <li
+                                                class="nav-item navbar-dropdown dropdown-user dropdown  user-dropdown">
+                                                <a
+                                                    class="nav-link btn btn-outline-secondary dropdown-toggle waves-effect  lang-dropdown"
+                                                    data-bs-toggle="dropdown"
+                                                    href="#">
+
+                                                    ENGLISH
+                                                </a>
+                                                <ul
+                                                    class="dropdown-menu dropdown-menu-end mt-3 py-2">
+
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <i
+                                                                class="ri-global-line"></i>
+                                                            <span
+                                                                class="align-middle">HINDI</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <i
+                                                                class="ri-global-line me-2"></i>
+                                                            <span
+                                                                class="align-middle">ENGLISH</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href>
+                                                    <img
+                                                        src="assets/img/bell-svgrepo-com (1).svg"
+                                                        alt
+                                                        class="w-px-40  rounded-circle me-2">
+                                                </a>
+                                            </li>
+                                            <div
+                                                class="d-flex align-items-lg-centermt-lg-0">
+                                                <li
+                                                    class="nav-item navbar-dropdown dropdown-user dropdown  user-dropdown">
+                                                    <a
+                                                        class="nav-link btn btn-outline-secondary  waves-effect"
+                                                        data-bs-toggle="dropdown"
+                                                        href="#"
+                                                        aria-expanded="false">
+                                                        <img
+                                                            src="assets//img/user-image.png"
+                                                            alt
+                                                            class="w-px-40 h-auto rounded-circle me-2">
+
+                                                    </a>
+                                                    <ul
+                                                        class="dropdown-menu dropdown-menu-end mt-3 py-2">
+                                                        <li>
+                                                            <a class="dropdown-item"
+                                                                href="#">
+                                                                <div
+                                                                    class="d-flex align-items-center">
+                                                                    <div
+                                                                        class="flex-shrink-0 me-2">
+                                                                        <div
+                                                                            class="avatar avatar-online">
+                                                                            <img
+                                                                                src="assets/img/user-image.png"
+                                                                                alt
+                                                                                class="w-px-40 h-auto rounded-circle">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="flex-grow-1">
+                                                                        <h6
+                                                                            class="mb-0 small">John
+                                                                            Doe</h6>
+                                                                        <small
+                                                                            class="text-muted">Admin</small>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <div
+                                                                class="dropdown-divider"></div>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item"
+                                                                href="#">
+                                                                <i
+                                                                    class="ri-user-3-line ri-22px me-2"></i>
+                                                                <span
+                                                                    class="align-middle">My
+                                                                    Profile</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item"
+                                                                href="#">
+                                                                <i
+                                                                    class="ri-settings-4-line ri-22px me-2"></i>
+                                                                <span
+                                                                    class="align-middle">Settings</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+
+                                            </div>
+
+                                            <li class="nav-item lh-1 me-4 ">
+                                                <button type="button"
+                                                    class="btn rounded-pill btn-icon waves-effect">
+
+                                                    <span
+                                                        class="ri-logout-circle-r-line ri-22px "></span>
+                                                </button>
+                                            </li>
+                                        </div>
+
+                                        <div class="header-menu d-lg-none d-block">
+                                            <ul
+                                                class="navbar-nav mr-auto d-inline-block">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="#"><i
+                                                            class="ri-list-unordered me-2"></i>List</a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link active"
+                                                        href="#"><i
+                                                            class="ri-layout-masonry-line me-2"></i>Board</a>
+                                                </li>
+                                                <li class="nav-item ">
+                                                    <a class="nav-link" href="#"><i
+                                                            class="ri-calendar-2-line me-2"></i>Calendar</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+                        </nav>
+
+                        <div class="content-wrapper"
+                            style="background-color: #e3e9f1;">
+                            <div class="space-layout">
+
+                            </div>
+                            <div class="container-xxl">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <nav aria-label="breadcrumb" class=" py-5">
+                                            <ol class="breadcrumb mb-0">
+                                                <li class="breadcrumb-item"><a
+                                                        href="#">Workspace</a></li>
+                                                <li class="breadcrumb-item"><a
+                                                        href="#">Dashboard</a></li>
+                                                <li class="breadcrumb-item"> <a
+                                                        href="#">Departments</a>
+                                                </li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-xxl flex-grow-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-sm-flex justify-content-between align-items-center">
+                                            <h2 class="font-38px mb-0">Dashboard</h2>
+                                            <div>
+                                                <button
+                                                    class="btn btn-outline-dark rounded-pill me-3"><i
+                                                        class="ri-equalizer-2-line pe-2"></i>Filter</button>
+                                                <button
+                                                    class="btn btn-primary rounded-pill"><i
+                                                        class="ri-add-circle-line pe-2"></i>Add
+                                                    New Departments</button>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row mt-5 ">
+
+                                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                                <div class="card  dashboard-card ">
+                                                    <div class="px-6">
+
+                                                        <div
+                                                            class="d-flex align-items-center mb-2">
+                                                            <div
+                                                                class="icon title-icon text-white rounded-circle p-2 me-2">
+                                                                <i
+                                                                    class="ri-store-3-line"></i>
+                                                            </div>
+                                                            <h4
+                                                                class="mb-0 font-25px">Marketing</h5>
+                                                        </div>
+                                                        <p
+                                                            class="text-muted mb-2 font-18px">Lorem
+                                                            Ipsum is simply dummy
+                                                            text of the printing and
+                                                            typesetting
+                                                            industry.</p>
+                                                    </div>
+                                                    <hr>
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between px-6">
+                                                        <div
+                                                            class="link-arrow d-flex align-items-center justify-content-center">
+                                                            <a href="#">
+                                                                <i
+                                                                    class="ri-arrow-right-wide-line"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div
+                                                                class="avatars-group">
+
+                                                                <img
+                                                                    src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                                    class="rounded-circle me-1"
+                                                                    alt="User 1">
+                                                                <img
+                                                                    src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                                    class="rounded-circle me-1"
+                                                                    alt="User 2">
+                                                               
+
+                                                                <div
+                                                                    class="user-count-icon text-black rounded-circle d-flex align-items-center justify-content-center">
+                                                                    +2
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                                <div class="card  dashboard-card ">
+                                                    <div class="px-6">
+
+                                                        <div
+                                                            class="d-flex align-items-center mb-2">
+                                                            <div
+                                                                class="icon title-icon text-white rounded-circle p-2 me-2">
+                                                                <i
+                                                                    class="ri-store-3-line"></i>
+                                                            </div>
+                                                            <h4
+                                                                class="mb-0 font-25px">Marketing</h5>
+                                                        </div>
+                                                        <p
+                                                            class="text-muted mb-2 font-18px">Lorem
+                                                            Ipsum is simply dummy
+                                                            text of the printing and
+                                                            typesetting
+                                                            industry.</p>
+                                                    </div>
+                                                    <hr>
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between px-6">
+                                                        <div
+                                                            class="link-arrow d-flex align-items-center justify-content-center">
+                                                            <a href="#">
+                                                                <i
+                                                                    class="ri-arrow-right-wide-line"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div
+                                                                class="avatars-group">
+
+                                                                <img
+                                                                    src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                                    class="rounded-circle me-1"
+                                                                    alt="User 1">
+                                                                <img
+                                                                    src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                                    class="rounded-circle me-1"
+                                                                    alt="User 2">
+                                                               
+
+                                                                <div
+                                                                    class="user-count-icon text-black rounded-circle d-flex align-items-center justify-content-center">
+                                                                    +2
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                                <div class="card  dashboard-card ">
+                                                    <div class="px-6">
+
+                                                        <div
+                                                            class="d-flex align-items-center mb-2">
+                                                            <div
+                                                                class="icon title-icon text-white rounded-circle p-2 me-2">
+                                                                <i
+                                                                    class="ri-store-3-line"></i>
+                                                            </div>
+                                                            <h4
+                                                                class="mb-0 font-25px">Marketing</h5>
+                                                        </div>
+                                                        <p
+                                                            class="text-muted mb-2 font-18px">Lorem
+                                                            Ipsum is simply dummy
+                                                            text of the printing and
+                                                            typesetting
+                                                            industry.</p>
+                                                    </div>
+                                                    <hr>
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between px-6">
+                                                        <div
+                                                            class="link-arrow d-flex align-items-center justify-content-center">
+                                                            <a href="#">
+                                                                <i
+                                                                    class="ri-arrow-right-wide-line"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div
+                                                                class="avatars-group">
+
+                                                                <img
+                                                                    src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                                    class="rounded-circle me-1"
+                                                                    alt="User 1">
+                                                                <img
+                                                                    src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                                    class="rounded-circle me-1"
+                                                                    alt="User 2">
+                                                             
+                                                                <div
+                                                                    class="user-count-icon text-black rounded-circle d-flex align-items-center justify-content-center">
+                                                                    +2
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-backdrop fade"></div>
+                            </div>
+                            <!-- /Content wrapper -->
 
                         </div>
-                    </div>
-                </nav>
+                        <!-- /Main layout -->
 
-                <div class="content-wrapper">
-                    <div class="container-xxl flex-grow-1 container-p-y content-container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1>Dashboard</h1>
-                            </div>
-                        </div>
                     </div>
+                    <!-- /Layout container -->
 
-                    <div class="content-backdrop fade"></div>
+                    <!-- Overlay -->
+                    <div class="layout-overlay layout-menu-toggle"></div>
                 </div>
-                <!-- /Content wrapper -->
 
-            </div>
-            <!-- /Main layout -->
+                <!-- Core JS -->
+                <script src="assets/vendor/js/helpers.js"></script>
+                <script src="assets/vendor/libs/jquery/jquery.js"></script>
+                <script src="assets/vendor/libs/popper/popper.js"></script>
+                <script src="assets/vendor/js/bootstrap.js"></script>
+                <script src="assets/vendor/js/menu.js"></script>
+                <script src="assets/js/main.js"></script>
+            </body>
 
-        </div>
-        <!-- /Layout container -->
-
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
-    </div>
-
-    <!-- Core JS -->
-    <script src="assets/vendor/js/helpers.js"></script>
-    <script src="assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="assets/vendor/libs/popper/popper.js"></script>
-    <script src="assets/vendor/js/bootstrap.js"></script>
-    <script src="assets/vendor/js/menu.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+        </html>
