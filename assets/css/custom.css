@@ -1,3 +1,92 @@
+@font-face {
+    font-family: 'SF-Bold';
+    src: url(../fonts/SFPRODISPLAYBOLD.OTF);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF-BlackItalic';
+    src: url(../fonts/SFPRODISPLAYBLACKITALIC.OTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SF-HeavyItalic';
+    src: url(../fonts/SFPRODISPLAYHEAVYITALIC.OTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SF-LightItalic';
+    src: url(../fonts/SFPRODISPLAYLIGHTITALIC.OTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SF-Medium';
+    src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF-Regular';
+    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF-SemiItalic';
+    src: url(../fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SF-ThinItalic';
+    src: url(../fonts/SFPRODISPLAYTHINITALIC.OTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SF-UltraItalic';
+    src: url(../fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Outfit-Light';
+    src: url(../fonts/OutfitLight1.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outfit-Medium';
+    src: url(../fonts/OutfitMedium.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url(../fonts/OutfitRegular.ttf);
+    font-style: normal;
+}
+
+
+body{
+    font-family: 'SF-Bold';
+}
+.navbar .navbar-nav .nav-link{
+    font-family: 'SF-Medium';
+    font-size: 16px;
+    font-weight: normal;
+}
+.breadcrumb-item{
+    font-family: 'Outfit-Light'; 
+}
+.font-38px{
+    font-size: 40px !important;
+    font-weight: 700 !important;
+    color: #1E293B !important;
+}
+.font-25px{
+    font-size: 26px;
+    font-weight: 700;
+    color: #1E293B;
+}
+.font-18px{
+    font-size: 16px;
+  columns: #94A3B8;
+    
+
+}
 .layout-wrapper {
     background-color: rgb(242, 245, 252) !important;
 }
@@ -61,19 +150,7 @@
     /* Removes any Bootstrap hover/focus effects */
     color: white !important;
 }
-.font-38px{
-    font-size: 38px ;
-    font-weight: 800 ;
-    color: #1e293b ;
-}
-.font-25px{
-    font-size: 25px;
-    font-weight: 700;
-    color: #1e293b;
-}
-.font-18px{
-    font-size: 18px;
-}
+
 
 .btn-radius {
     border-radius: 30px !important;
@@ -178,8 +255,9 @@ a {
 }
 
 .navbar .navbar-search {
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     border-radius: 30px;
+    color: #8F8F8F;
 }
 
 .right-sidebar .border-line,
@@ -197,13 +275,15 @@ a {
 
 .navbar .navbar-nav .lang-dropdown {
     color: #1e293b;
-    font-weight: 800;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .menu-vertical .menu-item .menu-link {
-    color: #ffffff;
-    font-size: 12px !important;
+    color: #FFFFFF;
+    font-size: 14px !important;
+    font-weight: 400;
+    font-family: Outfit-Light;
 }
 
 .sidebar .menu-inner .menu-item {
@@ -211,11 +291,10 @@ a {
 }
 
 .header-menu .navbar-nav .nav-item .active {
-    color: #e7113a !important;
+    color: #EF1938 !important;
     position: relative;
     font-weight: 800;
 }
-
 .navbar .navbar-nav .nav-item {
     padding: 0px 18px !important;
 }
@@ -290,6 +369,9 @@ a {
         margin-left: -10px;
         border: 2px solid #fff;
         z-index: 1;
+    }
+    .navbar .navbar-search {
+       font-family: 'Outfit-Regular';
     }
    
     
