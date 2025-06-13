@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
+
 .auth label{
     color: black;
 }
@@ -12,13 +13,12 @@
     border: 2px solid #E7113A !important;
 }
 .auth p{
-    font-family: "Poppins", sans-serif;
     color: #636060;
-    font-weight: 400;
 }
-.auth .site-img{
+.auth .website-logo{
     width: 200px;
     height: 58px;
+    margin-left: 40px;
 }
 .auth label{
    font-weight: 500;
@@ -37,6 +37,17 @@ margin-bottom: 50px;
 }
 .auth .auth-btn{
     margin-top: 60px !important;
+    background-color: #EF1938 !important;
+    color: white !important;
+    border-color: #EF1938  !important;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .auth .auth-form-width{
+    width: 50%;
+}
+
+
+
 }
 @media only screen and (max-width: 768px) {
  

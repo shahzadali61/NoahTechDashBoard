@@ -7,12 +7,9 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>NoahTech</title>
-
-    <meta name="description" content />
-
+    <title>Dashboard</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +33,7 @@
                 <div class="app-brand demo my-5">
                     <a href="/" class="app-brand-link">
                         <span class="app-brand-text demo menu-text fw-semibold ms-2">
-                            <img class="img-fluid" style="width: 150px" height="50px" src="assets/img/sidebar-logo.png"
+                            <img class="img-fluid mt-2" style="width: 150px" height="50px" src="assets/img/sidebar_logo.png"
                                 alt="not-show"></span>
                     </a>
 
@@ -44,21 +41,20 @@
 
                 <!-- <div class="menu-inner-shadow"></div> -->
 
-                <ul class="menu-inner py-1 mt-5">
+             <div >
+                   <ul class="menu-inner py-1 mt-5 upper-menu">
 
                     <!-- Layouts -->
                     <li class="menu-item active">
-                        <a href="/" class="menu-link ">
-
-                            <i class="menu-icon ri-home-8-line"></i>
-                            <div data-i18n="Support">Dashboard</div>
+                        <a href="/" class="menu-link d-flex align-items-center">
+                           <img class="me-3" src="assets/img/sidebar_icon/dashboard.png" alt="not-show">
+                            <div>Dashboard</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link menu-toggle" style="--menu-toggle-after: none;">
-                            <i class="menu-icon ri-file-3-line"></i>
-                            <!-- <i class="ri-file-3-line"></i> -->
-                            <div data-i18n="Layouts">Projects</div>
+                        <a href="#" class="menu-link menu-toggle d-flex align-items-center" style="--menu-toggle-after: none;">
+                             <img class="me-3" src="assets/img/sidebar_icon/project.png" alt="not-show">
+                            <div>Projects</div>
                             <span class="menu-toggle-icon ri-add-line"></span>
                         </a>
 
@@ -77,10 +73,10 @@
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link menu-toggle" style="--menu-toggle-after: none;">
-                            <i class="menu-icon ri-list-check"></i>
+                        <a href="#" class="menu-link menu-toggle d-flex align-items-center" style="--menu-toggle-after: none;">
+                             <img class="me-3" src="assets/img/sidebar_icon/deparments.png" alt="not-show">
 
-                            <div data-i18n="Layouts">Department</div>
+                            <div>Department</div>
                             <span class="menu-toggle-icon ri-add-line"></span>
                         </a>
 
@@ -100,18 +96,39 @@
                     </li>
 
                     <li class="menu-item">
-                        <a href="#" class="menu-link ">
-                            <i class="menu-icon ri-group-line"></i>
-                            <div data-i18n="Support">Team</div>
+                        <a href="#" class="menu-link d-flex align-items-center">
+                           <img class="me-3" src="assets/img/sidebar_icon/team.png" alt="not-show">
+                            <div>Team</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link ">
-                            <i class="menu-icon ri-settings-3-line"></i>
-                            <div data-i18n="Support">Setting</div>
+                        <a href="#" class="menu-link d-flex align-items-center">
+                           
+                          <img class="me-3" src="assets/img/sidebar_icon/setting.png" alt="not-show">
+
+                            <div >Setting</div>
+                        </a>
+                    </li>
+                 
+                </ul>
+                <ul class="menu-inner py-1 mt-5 buttom-menu">
+
+                        <li class="menu-item">
+                        <a href="#" class="menu-link d-flex align-items-center">
+                           <img class="me-3" src="assets/img/sidebar_icon//help.png" alt="not-show">
+                            <div>Help & information</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link d-flex align-items-center">
+                           
+                          <img class="me-3" src="assets/img/sidebar_icon/logout.png" alt="not-show">
+
+                            <div >Logout</div>
                         </a>
                     </li>
                 </ul>
+             </div>
             </aside>
 
             <!-- Main layout -->
@@ -134,16 +151,19 @@
 
                         <div class="collapse navbar-collapse header-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item  ">
-                                    <a class="nav-link " href="#"><i class="ri-list-unordered me-2"></i>List</a>
+                                <li class="nav-item d-flex align-items-center">
+                                     <img src="assets/img/navbar_icon/list.png" alt="not-show">
+                                    <a class="nav-link " href="#">List</a>
                                 </li>
-                                <li class="nav-item  ">
-                                    <a class="nav-link active" href="#"><i
-                                            class="ri-layout-masonry-line me-2"></i>Board</a>
+                                <li class="nav-item d-flex align-items-center">
+                                    <img src="assets/img/navbar_icon/board.png" alt="not-show">
+                                    <a class="nav-link active" href="#">Board</a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="#"><i class="ri-calendar-2-line me-2"></i>Calendar</a>
+                                <li class="nav-item d-flex align-items-center">
+                                     <img src="assets/img/navbar_icon/calendar.png" alt="not-show">
+                                    <a class="nav-link " href="#">Calendar</a>
                                 </li>
+                              
 
                             </ul>
                         </div>
@@ -158,9 +178,9 @@
 
                             <div class="navbar-nav ms-auto d-lg-flex align-items-lg-center">
 
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
                                     <li class="nav-item lh-1 me-4 navbar-search mt-lg-0 mt-3 ">
-                                        <div class="d-flex align-items-center py-1 rounded-3 ps-3">
+                                        <div class="d-flex align-items-center  py-1 rounded-3 ps-3">
                                             <i class="ri-search-line ri-22px me-2"></i>
                                             <input type="text" class="form-control border-0 shadow-none"
                                                 placeholder="Search..." aria-label="Search..." />
@@ -196,7 +216,7 @@
                                     </li>
                                     <li class="nav-item ">
                                         <a href>
-                                            <img src="assets/img/bell-svgrepo-com (1).svg" alt
+                                            <img src="assets/img/navbar_icon/nitification.png" alt
                                                 class="w-px-40  rounded-circle">
                                         </a>
                                     </li>
@@ -204,7 +224,7 @@
                                         <li class="nav-item navbar-dropdown dropdown-user dropdown  user-dropdown">
                                             <a class="nav-link btn btn-outline-secondary  waves-effect"
                                                 data-bs-toggle="dropdown" href="#" aria-expanded="false">
-                                                <img src="assets//img/user-image.png" alt
+                                                <img src="assets//img/navbar_icon/user.png" alt="not-show"
                                                     class="w-px-40 h-auto rounded-circle">
 
                                             </a>
@@ -250,10 +270,10 @@
 
                                     <li class="nav-item lh-1">
 
-                                        <button type="button" class="btn rounded-pill btn-icon waves-effect">
-                                            <img style="width: 20px;" src="assets/img/icons/logout.svg" alt="">
+                                        <a href="login.html" class="btn rounded-pill btn-icon waves-effect">
+                                            <img style="width: 20px;" src="assets/img/navbar_icon/logout.png" alt="not-show">
 
-                                        </button>
+                                        </a>
                                     </li>
                                 </div>
 
@@ -287,10 +307,10 @@
                         <div class="row">
                             <div class="col-12">
                                 <nav aria-label="breadcrumb" class=" py-5">
-                                    <ol class="breadcrumb mb-0">
-                                        <li class="breadcrumb-item"><a href="#">Workspace</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                        <li class="breadcrumb-item"> <a href="#">Departments</a>
+                                    <ol class="breadcrumb mb-0 py-3">
+                                        <li class="breadcrumb-item">Workspace</li>
+                                        <li class="breadcrumb-item">Dashboard</li>
+                                        <li class="breadcrumb-item"> Departments
                                         </li>
                                     </ol>
                                 </nav>
@@ -322,7 +342,7 @@
                                                     <div class="icon title-icon text-white rounded-circle p-2 me-2">
                                                         <i class="ri-store-3-line"></i>
                                                     </div>
-                                                    <h4 class="mb-0 font-25px">Marketing</h5>
+                                                    <h4 class="mb-0 font-26px">Marketing</h5>
                                                 </div>
                                                 <p class="font-18px my-4">Lorem
                                                     Ipsum is simply dummy
@@ -367,7 +387,7 @@
                                                     <div class="icon title-icon text-white rounded-circle p-2 me-2">
                                                         <i class="ri-store-3-line"></i>
                                                     </div>
-                                                    <h4 class="mb-0 font-25px">Marketing</h5>
+                                                    <h4 class="mb-0 font-26px">Marketing</h5>
                                                 </div>
                                                 <p class="font-18px my-4">Lorem
                                                     Ipsum is simply dummy
@@ -404,6 +424,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                   
                                 
                                 </div>
                             </div>
@@ -430,6 +451,7 @@
         <script src="assets/vendor/js/bootstrap.js"></script>
         <script src="assets/vendor/js/menu.js"></script>
         <script src="assets/js/main.js"></script>
+        
 </body>
 
 </html>

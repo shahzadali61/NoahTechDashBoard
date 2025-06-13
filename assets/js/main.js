@@ -48,29 +48,34 @@ let menu, animate;
   // Initialize menu
   //-----------------
 
-  let layoutMenuEl = document.querySelectorAll('#layout-menu');
-  layoutMenuEl.forEach(function (element) {
+ let layoutMenuEl = document.querySelectorAll('#layout-menu');
+layoutMenuEl.forEach(function (element) {
     menu = new Menu(element, {
-      orientation: 'vertical',
-      closeChildren: false
+        orientation: 'vertical',
+        closeChildren: false
     });
-    // Change parameter to true if you want scroll animation
+    
     window.Helpers.scrollToActive((animate = false));
     window.Helpers.mainMenu = menu;
 
     // Add click handler for menu toggles
     element.querySelectorAll('.menu-toggle').forEach(function(toggle) {
-      toggle.addEventListener('click', function() {
-        const menuItem = this.closest('.menu-item');
-        const icon = this.querySelector('.menu-toggle-icon');
-        if (menuItem.classList.contains('open')) {
-          icon.style.transform = 'rotate(0deg)';
-        } else {
-          icon.style.transform = 'rotate(45deg)';
-        }
-      });
+        toggle.addEventListener('click', function() {
+            const menuItem = this.closest('.menu-item');
+            const icon = this.querySelector('.menu-toggle-icon');
+            
+            // Reset ALL icons to 0deg first
+            element.querySelectorAll('.menu-toggle-icon').forEach(function(otherIcon) {
+                otherIcon.style.transform = 'rotate(0deg)';
+            });
+            
+            // Then rotate only the clicked icon (if opening)
+            if (!menuItem.classList.contains('open')) {
+                icon.style.transform = 'rotate(45deg)';
+            }
+        });
     });
-  });
+});
 
   // Initialize menu togglers and bind click on each
   let menuToggler = document.querySelectorAll('.layout-menu-toggle');

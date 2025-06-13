@@ -1,85 +1,44 @@
+
 @font-face {
-    font-family: 'SF-Bold';
-    src: url(../fonts/SFPRODISPLAYBOLD.OTF);
-    font-style: normal;
+    font-family: 'poppins-regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+     font-weight: 400;
+
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-weight: 400;
+ 
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+      font-weight: 600;
 }
 
 @font-face {
-    font-family: 'SF-BlackItalic';
-    src: url(../fonts/SFPRODISPLAYBLACKITALIC.OTF);
-    font-style: italic;
+    font-family: 'poppins-bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'SF-HeavyItalic';
-    src: url(../fonts/SFPRODISPLAYHEAVYITALIC.OTF);
-    font-style: italic;
+    font-family: 'poppins-extrabold';
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+     font-weight: 800;
 }
-
-@font-face {
-    font-family: 'SF-LightItalic';
-    src: url(../fonts/SFPRODISPLAYLIGHTITALIC.OTF);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SF-Medium';
-    src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF-Regular';
-    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF-SemiItalic';
-    src: url(../fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SF-ThinItalic';
-    src: url(../fonts/SFPRODISPLAYTHINITALIC.OTF);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SF-UltraItalic';
-    src: url(../fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Outfit-Light';
-    src: url(../fonts/OutfitLight1.ttf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Outfit-Medium';
-    src: url(../fonts/OutfitMedium.ttf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Outfit-Regular';
-    src: url(../fonts/OutfitRegular.ttf);
-    font-style: normal;
-}
-
-
 body {
-    font-family: 'SF-Medium';
+    font-family: 'poppins-medium';
+    font-style: normal;
+   
 }
 img{
     max-width: 100%;
 }
 
 .navbar .navbar-nav .nav-link {
-    font-family: 'SF-Medium';
+       font-family: 'poppins-medium';
     font-size: 16px;
     font-weight: normal;
 }
@@ -89,20 +48,20 @@ img{
 }
 
 .font-50px {
+    font-family: 'poppins-semibold';
     font-size: 50px;
-    font-weight: 600;
     color: #000000;
     line-height: 55px;
 }
 .font-40px {
+     font-family: 'poppins-bold';
     font-size: 40px;
-    font-weight: 700;
     color: #1E293B;
 }
 
 .font-26px {
+     font-family: 'poppins-bold';
     font-size: 26px;
-    font-weight: 700;
     color: #1E293B;
 }
 
@@ -110,7 +69,7 @@ img{
     font-size: 18px;
     color: #94A3B8;
     font-weight: 400;
-    font-family: 'SF-Regular';
+      font-family: 'poppins-regular';
 
 
 }
@@ -171,8 +130,7 @@ img{
 
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active,
-.btn-primary:visited {
+.btn-primary:active {
     background-color: #c21b3a !important;
     border-color: #c21b3a !important;
     box-shadow: none !important;
@@ -238,6 +196,7 @@ a {
 }
 
 .btn {
+     font-family: 'poppins-bold';
     height: 45px;
     font-size: 12px;
     /* padding: 5px 13px; */
@@ -310,12 +269,11 @@ a {
 .menu-vertical .menu-item .menu-link {
     color: #FFFFFF;
     font-size: 14px !important;
-    font-weight: 400;
-    font-family: Outfit-Light;
+     font-family: 'poppins-regular';
 }
 
 .sidebar .menu-inner .menu-item {
-    padding: 6px 0px;
+    padding: 8px 5px;
 }
 
 .header-menu .navbar-nav .nav-item .active {
@@ -408,8 +366,22 @@ a {
 .navbar .navbar-search {
     font-family: 'Outfit-Regular';
 }
+.menu-vertical{
+    width: 250px !important;
+}
+.breadcrumb .breadcrumb-item{
+      font-family: 'poppins-medium';
+      font-size: 12px;
+      color: #94A3B8;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+       color: #94A3B8;
 
-
+}
+.sidebar .upper-menu{
+    height: 70vh;
+    /* border:1px solid red; */
+}
 @media only screen and (min-width: 991px) {
     .header-menu .navbar-nav .nav-item .active::after {
         content: '';
@@ -456,15 +428,28 @@ a {
 
       
     }
+    .navbar-nav .dropdown-menu {
+  position: absolute;
+  left: 5%;
+}
 }
 
+@media only screen and (max-width: 768px) {
+     .font-50px {
+        font-size: 35px;
+            line-height: 40px;
+
+      
+    }
+
+}
 @media only screen and (max-width: 576px) {
     .right-sidebar {
         width: 90% !important;
     }
     .font-50px {
         font-size: 30px;
-        line-height: 40px;
+        line-height: 35px;
        
       
     }

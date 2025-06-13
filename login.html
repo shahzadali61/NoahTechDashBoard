@@ -8,88 +8,96 @@
         <meta charset="utf-8" />
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    
-        <title>Property</title>
-    
-        <meta name="description" content="" />
-    
+
+        <title>Login</title>
+
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="" />
-    
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="assets/vendor/fonts/remixicon/remixicon.css" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <link rel="stylesheet"
+            href="assets/vendor/fonts/remixicon/remixicon.css" />
         <!-- Core CSS -->
-        <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
+        <link rel="stylesheet" href="assets/vendor/css/core.css"
+            class="template-customizer-core-css" />
         <link rel="stylesheet" href="assets/css/auth.css" />
         <link rel="stylesheet" href="assets/css/custom.css" />
     </head>
 
     <body style="background-color: rgb(255, 255, 255);">
         <section class="auth ">
-            <div class="container-xxl px-0">
+            <div class="container-fluid px-0">
                 <div class="row ">
-              
+
                     <div class="col-lg-5 col-12">
                         <div class="row">
                             <div class="col-12 text-center text-lg-start">
-                                <img src="assets/img/noahtech.webp" class="img-fluid mt-2 ps-lg-3 site-img" alt="not-show">
+                                <img src="assets/img/noahtech.webp"
+                                    class="img-fluid mt-2 website-logo"
+                                    alt="not-show">
                             </div>
-                           
-                            <div class="col-12 vh-100 d-flex justify-content-center align-items-center">
+
+                            <div
+                                class="col-12 vh-100 d-flex justify-content-center align-items-center">
                                 <div class="auth-form-width">
                                     <div class="text-center">
-                                        <h4 class="font-50px mb-0">Welcome to Noah
+                                        <h4 class="font-50px mb-0">Welcome to
+                                            Noah
                                             Technologies</h4>
-                                        <p class="py-4">Best tool for business management</p>
+                                        <p class="py-4 font-18px">Best tool for business
+                                            management</p>
                                     </div>
                                     <div class="line-border">
 
                                     </div>
-                                    <form action="">
-                                     
+                                    <form action>
+
                                         <div class="mb-3">
                                             <label class="mb-1">Email</label>
-                                        <input type="email" class="form-control" placeholder="Enter email">
+                                            <input type="email"
+                                                class="form-control"
+                                                placeholder="Enter email">
                                         </div>
                                         <div class="position-relative">
-                                            <label class="mb-1 mt-2">Password</label>
-                                            <input type="password" class="form-control password-input" placeholder="*********" id="passwordInput">
-                                            <i id="togglePassword" class="ri-eye-off-line position-absolute" style="right: 15px; bottom: 5px; transform: translateY(-50%); cursor: pointer;"></i>
+                                            <label
+                                                class="mb-1 mt-2">Password</label>
+                                            <input type="password"
+                                                class="form-control password-input"
+                                                placeholder="*********"
+                                                id="passwordInput">
+                                            <i id="togglePassword"
+                                                class="ri-eye-off-line position-absolute"
+                                                style="right: 15px; bottom: 5px; transform: translateY(-50%); cursor: pointer;"></i>
                                         </div>
 
-                                     
-                                            <div class="text-center">
-                                                <button type="submit" class="btn btn-primary w-100 py-4 my-4 rounded-pill auth-btn">Sign in</button>
-                                               
-                                            </div>
+                                        <div class="text-center">
+                                            <a href="index.html"
+                                                class="btn btn-primary w-100 py-4 my-4 rounded-pill auth-btn">Sign
+                                                in</a>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-7 d-none d-lg-block">
-                        <div style="background-image: url(assets/img/login-img.png); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+                        <div
+                            style="background-image: url(assets/img/login-img.png); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
 
                         </div>
 
-                    </div> 
+                    </div>
                 </div>
 
             </div>
         </section>
 
-         <!-- Core JS -->
- 
-    <script src="assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="assets/vendor/libs/popper/popper.js"></script>
-    <script src="assets/vendor/js/bootstrap.js"></script>
-    <script src="assets/vendor/js/menu.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
+        <!-- Core JS -->
+
+        <script src="assets/vendor/libs/jquery/jquery.js"></script>
+        <script src="assets/vendor/libs/popper/popper.js"></script>
+        <script src="assets/vendor/js/bootstrap.js"></script>
+        <script src="assets/vendor/js/menu.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
         $('#togglePassword').on('click', function () {
             const passwordInput = $('#passwordInput');
             const icon = $(this);
@@ -102,7 +110,6 @@
             icon.toggleClass('ri-eye-off-line ri-eye-line');
         });
     </script>
-    
 
     </body>
 
