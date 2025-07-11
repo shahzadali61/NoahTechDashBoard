@@ -38,7 +38,7 @@ img{
 
 .navbar .navbar-nav .nav-link {
     font-family: 'poppins-medium';
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
 }
 
@@ -52,20 +52,20 @@ img{
     color: #000000;
     line-height: 55px;
 }
-.font-40px {
+.font-36px {
      font-family: 'poppins-bold';
-    font-size: 40px;
+    font-size: 36px;
     color: #1E293B;
 }
 
-.font-26px {
+.font-24px {
      font-family: 'poppins-bold';
-    font-size: 26px;
+    font-size: 24px;
     color: #1E293B;
 }
 
-.font-18px {
-    font-size: 18px;
+.font-15px {
+    font-size: 15px;
     color: #94A3B8;
     font-weight: 400;
       font-family: 'poppins-regular';
@@ -195,7 +195,6 @@ a {
 }
 
 .btn {
-     font-family: 'poppins-bold';
     height: 45px;
     font-size: 12px;
     /* padding: 5px 13px; */
@@ -303,6 +302,7 @@ a {
 .dashboard-card {
     border-radius: 15px;
     padding: 25px 0px !important;
+
 }
 
 .dashboard-card .title-icon {
@@ -367,11 +367,11 @@ a {
     font-family: 'poppins-regular';
 }
 .menu-vertical{
-    width: 250px !important;
+    width: 230px !important;
 }
 .breadcrumb .breadcrumb-item{
-      font-family: 'poppins-medium';
-      font-size: 12px;
+      font-family: 'poppins-regular';
+      font-size: 10px;
       color: #94A3B8;
 }
 .breadcrumb-item + .breadcrumb-item::before{
