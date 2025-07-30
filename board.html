@@ -774,16 +774,19 @@
         <script>
             $(document).ready(function() {
                 // Make all card divs draggable
-                $(".dashboard-card").draggable({
+                $(".board-card-body").draggable({
                     helper: function() {
-                        // Create a proper clone with full width
+                        // Create a proper clone with original width
                         var clone = $(this).clone();
+                        var originalWidth = $(this).outerWidth();
                         clone.css({
-                            'width': $(this).outerWidth() + 'px',
+                            'width': originalWidth + 'px',
                             'height': $(this).outerHeight() + 'px',
                             'opacity': '0.8',
                             'z-index': '1000',
-                            'position': 'relative'
+                            'position': 'relative',
+                            'max-width': originalWidth + 'px',
+                            'min-width': originalWidth + 'px'
                         });
                         return clone;
                     },
@@ -791,11 +794,12 @@
                     zIndex: 1000,
                     start: function(event, ui) {
                         $(this).addClass('dragging');
-                        // Ensure helper maintains full width
+                        // Ensure helper maintains original width
+                        var originalWidth = $(this).outerWidth();
                         ui.helper.css({
-                            'width': $(this).outerWidth() + 'px',
-                            'min-width': $(this).outerWidth() + 'px',
-                            'max-width': 'none'
+                            'width': originalWidth + 'px',
+                            'min-width': originalWidth + 'px',
+                            'max-width': originalWidth + 'px'
                         });
                     },
                     stop: function(event, ui) {
@@ -805,7 +809,7 @@
                 
                 // Make all column containers droppable
                 $(".col-lg-3").droppable({
-                    accept: ".dashboard-card",
+                    accept: ".board-card-body",
                     hoverClass: "drop-hover",
                     drop: function(event, ui) {
                         var draggedCard = ui.draggable;
@@ -823,7 +827,7 @@
                 });
                 
                 // Add visual feedback for draggable cards
-                $(".dashboard-card").hover(
+                $(".board-card-body").hover(
                     function() {
                         $(this).addClass('card-hover');
                     },
@@ -858,31 +862,23 @@
                 transition: all 0.3s ease;
             }
             
-            .dashboard-card {
+            .board-card-body {
                 cursor: move;
                 transition: all 0.3s ease;
-                width: 100% !important;
-                min-width: 100% !important;
             }
             
-            .dashboard-card:hover {
+            .board-card-body:hover {
                 transform: translateY(-2px);
                 box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
             }
             
-            /* Ensure dragged elements maintain width */
+            /* Ensure dragged elements maintain original width */
             .ui-draggable-dragging {
-                width: 100% !important;
-                min-width: 100% !important;
-                max-width: none !important;
                 box-sizing: border-box !important;
             }
             
-            /* Helper clone styling */
+            /* Helper clone styling - maintain original width */
             .ui-draggable-helper {
-                width: 100% !important;
-                min-width: 100% !important;
-                max-width: none !important;
                 box-sizing: border-box !important;
             }
         </style>
