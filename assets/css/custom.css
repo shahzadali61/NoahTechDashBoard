@@ -412,13 +412,28 @@ a {
     border-radius: 12px 12px 0px 0px;
     margin-bottom: 20px;
 }
+.lead-name{
+    font-family: 'poppins-regular' !important;
+    font-size: 18px !important;
+}
+.lead-price{
+    font-family: 'poppins-bold' !important;
+}
 .lead-no{
     font-family: 'poppins-medium' !important;
+    font-size: 20px !important;
 }
 .board-card-body{
-    background: none;
+    background: rgba(255, 255, 255, 0.678) !important;
     border: 1px solid #d0dce4;
     padding: 25px 0px 0px 0px !important;
+}
+.board-card-header .btn-outline-secondary:hover,
+.board-card-header .btn-outline-secondary:focus,
+.board-card-header .btn-outline-secondary:active
+{
+    background: none !important;
+    color: white !important;
 }
 .board-card-body .title-icon{
     padding: 0px !important;
